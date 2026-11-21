@@ -141,7 +141,7 @@ img { display: block; }
 
 .race-card {
   position: relative; overflow: hidden;
-  padding: 20px 20px 18px; border-radius: var(--r-xl);
+  padding: 14px 16px 12px; border-radius: var(--r-lg);
   background:
     radial-gradient(120% 120% at 0% 0%, rgba(46, 230, 197, 0.28), transparent 50%),
     radial-gradient(120% 120% at 100% 100%, rgba(255, 138, 61, 0.26), transparent 52%),
@@ -152,28 +152,22 @@ img { display: block; }
 .contours { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
 .contours path { fill: none; stroke: rgba(255, 255, 255, 0.06); stroke-width: 1.2; }
 .race-card > *:not(.contours) { position: relative; }
-.rc-head { display: flex; align-items: center; justify-content: space-between; }
-.race-card .eyebrow { color: rgba(255, 255, 255, 0.7); }
-.rc-chip {
-  display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px 4px 8px; border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08); border: 1px solid var(--line); font-size: 12px; font-weight: 600; color: var(--muted);
-}
-.rc-chip svg { width: 14px; height: 14px; }
-.race-card h2 { font-size: 30px; margin-top: 6px; }
-.rc-row { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; margin-top: 6px; }
-.rc-count { display: flex; align-items: flex-end; gap: 10px; }
+.race-card .eyebrow { color: rgba(255, 255, 255, 0.7); font-size: 11px; }
+.rc-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.rc-info { min-width: 0; }
+.race-card h2 { font-size: 24px; margin-top: 2px; }
+.rc-meta { display: block; margin-top: 3px; font-size: 13px; font-weight: 600; color: var(--muted); line-height: 1.3; }
+.rc-count { display: grid; justify-items: end; flex: none; }
 .rc-count b {
-  font-family: var(--display); font-weight: 800; font-size: 96px; line-height: 0.82; letter-spacing: -0.01em;
+  font-family: var(--display); font-weight: 800; font-size: 56px; line-height: 0.85; letter-spacing: -0.01em;
   background: linear-gradient(100deg, var(--run) 10%, #9ff5e4 45%, var(--lift) 95%);
   -webkit-background-clip: text; background-clip: text; color: transparent;
 }
-.rc-count span { color: var(--muted); font-weight: 600; font-size: 15px; line-height: 1.15; padding-bottom: 4px; }
-.rc-when { display: flex; align-items: flex-start; gap: 6px; color: var(--muted); font-size: 13px; font-weight: 600; line-height: 1.3; text-align: right; padding-bottom: 4px; }
-.rc-when svg { width: 16px; height: 16px; margin-top: 1px; }
-.rc-progress { margin-top: 18px; }
+.rc-count span { color: var(--muted); font-weight: 700; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; margin-top: 4px; white-space: nowrap; }
+.rc-progress { margin-top: 12px; }
 .rc-bar { height: 6px; border-radius: 99px; background: rgba(255, 255, 255, 0.1); overflow: hidden; }
 .rc-bar i { display: block; height: 100%; border-radius: 99px; background: linear-gradient(90deg, var(--run), var(--lift)); min-width: 6px; }
-.rc-progress-label { display: flex; justify-content: space-between; margin-top: 8px; font-size: 13px; font-weight: 600; color: var(--muted); }
+.rc-progress-label { display: flex; justify-content: space-between; margin-top: 6px; font-size: 13px; font-weight: 600; color: var(--muted); }
 
 .today-card {
   position: relative; overflow: hidden; isolation: isolate;

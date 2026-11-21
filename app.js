@@ -201,14 +201,13 @@
 
         <article class="race-card">
           ${CONTOURS}
-          <div class="rc-head">
-            <span class="eyebrow">A-race</span>
-            <span class="rc-chip">${I.pin}${esc(PLAN.race.place)}</span>
-          </div>
-          <h2>${esc(PLAN.race.name)}</h2>
           <div class="rc-row">
-            <div class="rc-count"><b>${left}</b><span>days<br>to go</span></div>
-            <div class="rc-when">${I.clock}<span>Sat, Apr 24<br>${esc(PLAN.race.time)} start</span></div>
+            <div class="rc-info">
+              <span class="eyebrow">A-race</span>
+              <h2>${esc(PLAN.race.name)}</h2>
+              <span class="rc-meta">Sat, Apr 24 · ${esc(PLAN.race.time)} · ${esc(PLAN.race.place)}</span>
+            </div>
+            <div class="rc-count"><b>${left}</b><span>days to go</span></div>
           </div>
           <div class="rc-progress">
             <div class="rc-bar"><i style="width:${(pct * 100).toFixed(1)}%"></i></div>
