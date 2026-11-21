@@ -125,4 +125,4 @@ const STRENGTH = {
 };
 
 // Exercises with a photo in images/ (full size) and images/thumbs/ (list thumbnail).
-const PHOTOS = ["band-walk", "bss", "cable-row", "calf-raise", "copenhagen", "db-bench", "db-curl", "db-shoulder-press", "dead-bug", "face-pull", "hip-thrust", "knee-raise", "lat-pulldown", "pallof", "pushdown", "rdl", "side-plank", "smith-squat"];
+const PHOTOS = ["band-walk", "bss", "cable-row", "calf-raise", "copenhagen", "db-bench", "db-curl", "db-shoulder-press", "dead-bug", "face-pull", "hip-thrust", "knee-raise", "lat-pulldown", "lateral-raise", "pallof", "pushdown", "rdl", "side-plank", "smith-squat"];
