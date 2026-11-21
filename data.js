@@ -84,7 +84,7 @@ const STRENGTH = {
         cues: ["Upper back on the bench, bar padded across the hips", "Chin tucked, drive through the heels", "Full lockout, squeeze the glutes 1 second"] },
       { id: "bss", name: "Bulgarian split squat (dumbbells)", target: "3 × 8 each leg", kind: "load", each: true, purpose: "Single-leg stability",
         cues: ["Rear foot laces-down on the bench", "Lower straight down, front knee over mid-foot", "Push through the front heel, hips level"] },
-      { id: "calf-raise", name: "Single-leg calf raise, straight and bent knee", target: "3 × 12 each leg", kind: "load", optional: true, purpose: "Achilles and calf durability",
+      { id: "calf-raise", name: "Single-leg calf raise, straight and bent knee", target: "3 × 12 each leg", kind: "bw", purpose: "Achilles and calf durability",
         cues: ["Ball of the foot on a step, heel hanging", "Full stretch at the bottom, pause at the top", "Half the reps straight-knee, half bent-knee"] },
       { id: "copenhagen", name: "Copenhagen plank", target: "3 × 20 sec each side", kind: "bw", purpose: "Adductors, groin strain history",
         cues: ["Top leg on the bench, forearm under the shoulder", "Lift the hips into a straight line", "Start with the knee on the bench if needed"] },

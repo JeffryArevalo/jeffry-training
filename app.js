@@ -341,7 +341,7 @@
     const rows = s.exercises.map((ex, i) => {
       const saved = ex.kind === "load" ? weights[ex.id] : null;
       const right = ex.kind === "bw"
-        ? `<span class="ex-w muted">BW</span>`
+        ? `<span class="ex-w muted">Body Weight</span>`
         : saved ? `<span class="ex-w">${fmt(saved.w)}<small>${unitOf(ex)}</small></span>` : `<span class="ex-w add">+ lb</span>`;
       return `
         <button class="ex-row" data-go="#/lift/${id}/${i}" aria-label="${esc(ex.name)}">
@@ -374,7 +374,7 @@
 
   function weightCard(ex) {
     if (ex.kind !== "load") {
-      return `<div class="weight-card bw"><span class="wu-ic">${I.check}</span><div><b>Bodyweight</b><p>No weight to track. Focus on clean, controlled reps.</p></div></div>`;
+      return `<div class="weight-card bw"><span class="wu-ic">${I.check}</span><div><b>Body Weight</b></div></div>`;
     }
     const entry = getWeight(ex);
     return `
