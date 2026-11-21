@@ -1,6 +1,6 @@
 // Offline support: network first, fall back to the cached copy (works on the trail or in the gym with weak signal).
 // Bump CACHE when core files change so phones drop the old copy.
-const CACHE = "jeffry-training-v1";
+const CACHE = "jeffry-training-v2";
 const CORE = ["./", "./index.html", "./styles.css", "./app.js", "./data.js", "./manifest.json", "./icon-180.png"];
 
 self.addEventListener("install", (e) => {
